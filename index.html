@@ -56,6 +56,82 @@ a:active {
 
 <body>
 
+<p id="dinamo"></p>
+
+<script>
+	
+var klub = {
+  ime: "Inter",
+  prezime: "Zapresic",
+  navijaci:"Divlje Svinje"
+};
+
+const hajduk="sranje";
+
+const divljeSvinje={
+  napaliIhTvorai="da",
+}
+
+function prost(n)
+{
+  if (n===1)
+  {
+    return false;
+    }
+    else if(n === 2)
+    {
+      return true;
+    }else
+    
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+  }
+  return true;  
+}
+
+var niz =[1,2,3,4,5,6,7,8,9];
+
+document.getElementById("dinamo").innerHTML =
+klub.ime + klub.prezime + klub.navijaci;
+
+function init()
+{
+  prost=document.getElementById("prost");
+}
+
+if(prost(prost)==true)
+{
+  dokument.getElementById("dinamo").innerHTML="broj je prost";
+}
+
+if(prost(prost)==false)
+{
+  dokument.getElementById("dinamo").innerHTML="broj nije prost";
+}
+
+var broj = "";
+
+for (var i = 0; i < niz.length; i++) {
+  broj += niz[i] + "<br>";
+}
+document.getElementById("dinamo").innerHTML = broj;
+
+
+var i = 0;
+while (i < 10) {
+  broj += "<br>Broj = " + i;
+  i++;
+}
+document.getElementById("dinamo").innerHTML = broj;	
+	
+</script>
+	
+	
+	
 <div class="background">
   <div class="transbox">
     <p>Pink Floyd</p>
