@@ -70,7 +70,6 @@ document.getElementById("demo").innerHTML = text;
 <input type="number" id="prost" size="10" value="0" onchange="prost()"/>
 <label for="prost"> Unesite broj </label>
 
-<p id="dinamo"></p>
 	
 <script>
 	
@@ -109,7 +108,7 @@ function prost(n)
 
 var niz =[1,2,3,4,5,6,7,8,9];
 
-document.getElementById("dinamo").innerHTML =
+document.getElementById("demo").innerHTML =
 klub.ime + klub.prezime + klub.navijaci;
 
 function init()
@@ -124,7 +123,7 @@ if(prost(prost)==true)
 
 if(prost(prost)==false)
 {
-  document.getElementById("dinamo").innerHTML="broj nije prost";
+  document.getElementById("demo").innerHTML="broj nije prost";
 }
 
 var broj = "";
@@ -132,7 +131,7 @@ var broj = "";
 for (var i = 0; i < niz.length; i++) {
   broj += niz[i] + "<br>";
 }
-document.getElementById("dinamo").innerHTML = broj;
+document.getElementById("demo").innerHTML = broj;
 
 broj="";
 	
@@ -141,7 +140,7 @@ while (i < 10) {
   broj += "<br>Broj = " + i;
   i++;
 }
-document.getElementById("dinamo").innerHTML = broj;	
+document.getElementById("demo").innerHTML = broj;	
 	
 </script>
 	
