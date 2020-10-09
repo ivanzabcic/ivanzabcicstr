@@ -66,7 +66,12 @@ while (i < 10) {
 }
 document.getElementById("demo").innerHTML = text;
 </script>
+	
+<input type="number" id="prost" size="10" value="0" onchange="prost()"/>
+<label for="prost"> Unesite broj </label>
 
+<p id="dinamo"></p>
+	
 <script>
 	
 var klub = {
@@ -109,17 +114,17 @@ klub.ime + klub.prezime + klub.navijaci;
 
 function init()
 {
-  prost=document.getElementById("prost");
+  prost=document.getElementById("prost").innerHTML;
 }
 
 if(prost(prost)==true)
 {
-  dokument.getElementById("dinamo").innerHTML="broj je prost";
+  document.getElementById("prost").innerHTML="broj je prost";
 }
 
 if(prost(prost)==false)
 {
-  dokument.getElementById("dinamo").innerHTML="broj nije prost";
+  document.getElementById("dinamo").innerHTML="broj nije prost";
 }
 
 var broj = "";
@@ -129,7 +134,8 @@ for (var i = 0; i < niz.length; i++) {
 }
 document.getElementById("dinamo").innerHTML = broj;
 
-
+broj="";
+	
 var i = 0;
 while (i < 10) {
   broj += "<br>Broj = " + i;
