@@ -55,23 +55,27 @@ a:active {
 </head>
 
 <body>
+	
+<input type="number" id="prost" size="10" value="0" onchange="prost()"/>
+<label for="prost"> Unesite broj </label>
+	
 <p id="demo"></p>
 
 <script>
 var text = "";
 var i = 0;
 while (i < 10) {
-  text += "<br>The number is " + i;
+  text += "<br>Broj = " + i;
   i++;
 }
 document.getElementById("demo").innerHTML = text;
-</script>
+
+document.getElementById("demo").innerHTML="nece mi radit ostatak koda al ga mozete vidit na inspectu";
 	
-<input type="number" id="prost" size="10" value="0" onchange="prost()"/>
-<label for="prost"> Unesite broj </label>
+
 
 	
-<script>
+
 	
 var klub = {
   ime: "Inter",
